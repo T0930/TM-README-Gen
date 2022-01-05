@@ -46,7 +46,7 @@ inquirer
         choices: ['MIT', 'ISC', 'GPL', 'APACHE2.0'],
         name: 'license'
     }
-    // ]).then((data) => {
+    ]).then((data) => {
 
 var READMECONTENT = `
 # Project: ${data.title} 
@@ -56,24 +56,28 @@ ${data.description}
 
 ### Table of Contents:
 * [Installation](#Installation)
-* [Usage Information](#Usage Information)
-* [Contribution Guidelines](#Contributin Guidelines)
+* [Usage Information](#Usage)
+* [Contribution Guidelines](#Contribution)
 
-### Installation Instructions: 
+### Installation: 
 ${data.installation}
 
-### Usage Information:
+### Usage:
 ${data.usage}
 
-### Contribution Guidelines:
+### Contribution:
 ${data.contribution}
 
 ### Questions:
-For any questions, please e-mail me at ${data.emailname}
+For any questions, please e-mail me at [Contact Us](mailto:${data.emailname})
+
+### Github Profile:
+https://github.com/${data.gitname}
 
 `
+console.log(READMECONTENT)
 
-    //     fs.writeFile(filename, JSON.stringify(data), (err) => {
-    //         err ? console.error(err) : console.log('Success!')
-    //     })
-    // })
+        fs.writeFile("./output/README.md", READMECONTENT, (err) => {
+            err ? console.error(err) : console.log('Success!')
+        })
+ })
