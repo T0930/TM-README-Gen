@@ -19,10 +19,13 @@
 
 
 ## Screen Shots:  
-![Preview](will update)
-![Preview](will update)
+![Preview](https://github.com/T0930/TM-README-Gen/blob/main/images/screenshot1.png?raw=true)
+![Preview](https://github.com/T0930/TM-README-Gen/blob/main/images/screenshot2.png?raw=true)
 
 
 ## Repository:
 [TM-README-GEN-Repository](https://github.com/T0930/TM-README-Gen)
+<br>
+[Video Demonstration](https://vimeo.com/663207631)
+
 
