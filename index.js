@@ -27,8 +27,9 @@ const questions = [ {
     name: 'description'
 },
 {
-    type: 'input',
+    type: 'list',
     message: 'Installation instructions?',
+    choices: ['ndm i inquirer'],
     name: 'installation'
 },
 {
@@ -38,12 +39,13 @@ const questions = [ {
 },
 {
     type: 'input',
-    message: 'Contribution guidelines?',
+    message: 'Contributors?',
     name: 'contribution'
 },
 {
-    type: 'input',
+    type: 'list',
     message: 'Test Instructions?',
+    choices: ['npm test'],
     name: 'testIns'
 },
 {
@@ -65,7 +67,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then((data) => {
-        const fileName = 'README.md';
+        const fileName = 'READMEoutput.md';
         writeToFile(fileName, data)
     })
 }
